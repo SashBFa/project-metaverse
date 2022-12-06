@@ -54,7 +54,7 @@ export default function Hero() {
             height={1000}
             className="w-full h-[350px] sm:h-[500px] object-cover rounded-tl-[140px] z-10 relative"
           />
-          <Link href="#explore">
+          <a href="#explore">
             <div className="relative w-full flex justify-end -mt-[50px] pr-[40px] z-10 sm:-mt-[70px]">
               <Image
                 src="/img/stamp.png"
@@ -64,7 +64,7 @@ export default function Hero() {
                 className="w-[100px] h-[100px] sm:w-[155px] sm:h-[155px] object-contain"
               />
             </div>
-          </Link>
+          </a>
         </motion.div>
       </motion.div>
     </section>

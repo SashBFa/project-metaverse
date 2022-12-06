@@ -8,6 +8,11 @@ type TextType = {
   title: string;
   textStyles: string;
 };
+
+type TitleType = {
+  title: JSX.Element;
+  textStyles: string;
+};
 export const TypingText = ({ title, textStyles }: TextType) => (
   <motion.p
     variants={textContainer}
@@ -21,6 +26,13 @@ export const TypingText = ({ title, textStyles }: TextType) => (
   </motion.p>
 );
 
-export const TitleText = ({ title, textStyles }: TextType) => (
-  <h2>Title Text</h2>
+export const TitleText = ({ title, textStyles }: TitleType) => (
+  <motion.h2
+    variants={textVariant2}
+    initial="hidden"
+    whileInView="show"
+    className={`mt-[8px] font-bold text-[40px] text-white md:text-[64px] ${textStyles}`}
+  >
+    {title}
+  </motion.h2>
 );

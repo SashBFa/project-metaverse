@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { TypingText } from '../components/CustomText';
+import { TypingText } from '../components';
 import { fadeIn } from '../animations/fadeIn';
 import { staggerContainer } from '../animations/staggerContainer';
 import Image from 'next/image';
@@ -15,7 +15,7 @@ export default function About() {
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0.25 }}
-        className="w-full mx-auto flex justify-center items-center flex-col lg:w-4/5"
+        className="w-full mx-auto flex justify-center items-center flex-col 2xl:max-w-7xl"
       >
         <TypingText title="| About Metaversus" textStyles="text-center" />
         <motion.p
